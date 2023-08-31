@@ -46,7 +46,7 @@ def get_time_info(url: str) -> int:
 
 
 @ensure_annotations
-def render_youtube_video(url: str, width: int = 780, height: int = 160) -> str:
+def render_youtube_video(url: str, width: int = 780, height: int = 600) -> str:
     try:
         if url is None:
             raise InvalidURLException("URL cannot be None")
