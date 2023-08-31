@@ -17,7 +17,7 @@ def is_valid_url(url: str) -> bool:
 
 
 @ensure_annotations
-def render_site(url: str, width: str = "100%", height: int = 600) -> str:
+def embed_site(url: str, width: str = "100%", height: int = 600) -> str:
     try:
         if is_valid_url(url):
             response = display.IFrame(src=url, width=width, height=height)
